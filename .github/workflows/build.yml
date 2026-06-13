@@ -51,7 +51,6 @@ jobs:
         with:
           name: firmware-${{ github.sha }}
           path: |
-            # TODO 3 - upload
-            zephyr-in-production/build/prod/mcuboot/zephyr/zephyr.bin
-            zephyr-in-production/build/prod/app/zephyr/zephyr.signed.bin
+            - zephyr-in-production/build/prod/mcuboot/zephyr/zephyr.bin
+            - zephyr-in-production/build/prod/app/zephyr/zephyr.signed.bin
           retention-days: 30
